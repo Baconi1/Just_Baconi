@@ -12,7 +12,31 @@ getgenv().autoblackbag then return end
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(56.3307877, 9.82232189, -27.4355011, 0.0140739493, -6.54082868e-08, 0.999900937, 4.88122112e-08, 1, 6.47277147e-08, -0.999900937, 4.78963997e-08, 0.0140739493)
             wait()
         end
-    end)   
+    end)
+    MainSection:NewToggle("Stay on bag(Safezone)", "tp you on the top of the bag", function(v)
+        getgenv().autoblackbag = v
+        while true do
+            if not getgenv().autoblackbag then return end
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.808876, 9.85557461, 75.6152191, 0.0428906791, -8.49579962e-09, 0.999079764, -4.77750959e-08, 1, 1.05546185e-08, -0.999079764, -4.81838285e-08, 0.0428906791)
+            wait()
+        end
+    end)
+    MainSection:NewToggle("Stay on bag 2(Safezone)", "tp you on the top of the bag", function(v)
+        getgenv().autoblackbag = v
+        while true do
+            if not getgenv().autoblackbag then return end
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(98.0530777, 9.85223961, 71.0164185, 0.013808053, 2.96444362e-08, 0.999904692, -1.18565593e-08, 1, -2.94835303e-08, -0.999904692, -1.14483187e-08, 0.013808053)
+            wait()
+        end
+    end)
+    MainSection:NewToggle("Stay on the bag 3(Safezone)", "tp you on the top of the bag", function(v)
+        getgenv().autoblackbag = v
+        while true do
+            if not getgenv().autoblackbag then return end
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(97.8537292, 9.85480976, 66.1067047, -0.0675907806, -9.69354641e-09, 0.997713149, -2.8562182e-08, 1, 7.7808e-09, -0.997713149, -2.79709536e-08, -0.0675907806)
+            wait()
+        end
+    end)
     local MainSection = Main:NewSection("Strength")
 MainSection:NewToggle("DoubleKick", "Spam your strength", function(v)
        getgenv().autostrength = v
